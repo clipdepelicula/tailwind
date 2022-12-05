@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Añadir contenido a base*/
+@layer base{
+    /*body{
+        background-image: url('./assets/img/pattern.png');
+    }*/
+
+    /*FUENTES*/
+    @font-face{
+        font-family: "TrebuchetMS";
+        src: url('./assets/fonts/TrebuchetMS.ttf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "BebasNeue";
+        src: url('./assets/fonts/BebasNeue.otf');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face{
+        font-family: "WebSymbolsRegular";
+        src: url('./assets/fonts/websymbols-regular-webfont.eot');
+        src: url('./assets/fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('./assets/fonts/websymbols-regular-webfont.woff') format('woff'),
+            url('./assets/fonts/websymbols-regular-webfont.ttf') format('truetype'),
+            url('./assets/fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .symbol{
+        font-family: "WebSymbolsRegular";
+    }
+    .bebas{
+        font-family: "BebasNeue";
+    }
+    .trebuchet{
+        font-family: "TrebuchetMS";
+    }
+    /*FIN FUENTES*/
+}
+
+/* Añadir contenido a components*/
+@layer components{
+    
+}
+
+/* Añadir contenido a utilities*/
+@layer utilities{
+    
+}
+
+/* BEM + FLEXBOX */
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    background-color: #f6f6f6;
+    height: calc(100vh - 80px);
+    gap: 10px;
+    padding: 10px;
+    .__caja{
+        flex: 1;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #000;
+        background-color: #fff;
+    }
+    .--bolder{
+        font-weight: bold;
+        border: 3px solid #000;
+    }
+}
